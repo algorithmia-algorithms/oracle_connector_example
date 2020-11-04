@@ -1,4 +1,3 @@
-
 import os, sys
 
 if "ORACLE_HOME" not in os.environ:
@@ -18,5 +17,3 @@ import cx_Oracle
 def apply(input):
     connection = cx_Oracle.connect("hr", "fakepassword", "dbhost.example.com/orclpdb1")
     return "hello {}".format(input)
-
-# apply("hello")
