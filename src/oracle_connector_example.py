@@ -6,7 +6,7 @@ if "ORACLE_HOME" not in os.environ:
         os.environ['LD_LIBRARY_PATH'] = "{}:/opt/algorithm/instantclient/lib".format(os.environ['LD_LIBRARY_PATH'])
     else:
         os.environ['LD_LIBRARY_PATH'] = "/opt/algorithm/instantclient/lib"
-    os.execl(sys.executable, 'python', __file__, *sys.argv[1:])
+    os.execl(sys.executable, 'python', __file__, "/usr/local/bin/algorithmia-pipe")
 
 
 import Algorithmia
